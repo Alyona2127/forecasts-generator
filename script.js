@@ -26,7 +26,7 @@ const forecastItemTemplate = document.querySelector('#forecast-item');
 const predictionList = document.querySelector('.forecasts');
 
 button.addEventListener('click', function() {
-    const predictionNumber = getRandomInt(1, 3);
+    const predictionNumber = getRandomInt(1, 4);
     const predictionProbability = getRandomInt(0, 100);
 
     if (predictionText) {
