@@ -31,14 +31,14 @@ button.addEventListener('click', function() {
 
     if (predictionText) {
         const item = forecastItemTemplate.content.cloneNode(true);
-        const previousPrediction = item.querySelector('p');
-        previousPrediction.textContent = predictionText;
+        const previousPredictionContainer = item.querySelector('p');
+        previousPredictionContainer.textContent = predictionText;
         predictionList.prepend(item);
     }
     
-    if (predictionNumber == 1) {
+    if (predictionNumber === 1) {
         predictionText = 'Ваши надежды и планы сбудутся сверх всяких ожиданий';
-    } else if (predictionNumber == 2) {
+    } else if (predictionNumber === 2) {
         predictionText = 'Вам предлагается мечта всей жизни. Скажите да!';
     } else {
         predictionText = 'Время и терпение, вас ждут много сюрпризов!';
